@@ -19,7 +19,7 @@ gem "pry-rails" # not in dev group in case running via prod/staging @ a training
 gem "puma"
 gem "rails-perftest"
 gem "rake"
-gem "responders" #For Rails 4.2 # LOCKED DOWN
+gem "responders" , ">= 3.0.1" #For Rails 4.2 # LOCKED DOWN
 gem "ruby-prof"
 gem "sassc-rails"
 gem "simplecov", require: false, group: :test
@@ -52,7 +52,7 @@ group :development, :test, :mysql do
   gem "database_cleaner"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", '4.0.0.beta3' # 4/26/2019: LOCKED DOWN
+  gem "rspec-rails", "4.0.0" # 4/26/2019: LOCKED DOWN
   gem "test-unit"
 end
 
